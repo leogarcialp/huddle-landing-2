@@ -1,0 +1,112 @@
+:root {
+   --primary: hsl(322, 100%, 66%);
+   --neutral1: hsl(193, 100%, 96%);
+   --neutral2: hsl(192, 100%, 9%);
+   --neutral3: hsl(208, 11%, 55%);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.8rem;
+   font-family: 'Open Sans', sans-serif;
+}
+
+img {
+   width: 100%;
+}
+
+h1,h2,h3 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+}
+
+a {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+}
+
+
+/* ============= */
+/* Desktop First */
+.header {
+   width: 100%;
+   background-image: url('./images/bg-hero-desktop.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-color: var(--neutral1);
+}
+
+.container {
+   width: 130rem;
+   margin: 0 auto;
+}
+
+.header__nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 15rem;
+}
+
+.header__logo {
+   width: 18rem;
+}
+
+.header__link {
+   padding: 1.5rem 7rem;
+   font-size: 1.3rem;
+   background-color: white;
+   color: var(--neutral2);
+   text-decoration: none;
+   border-radius: 3rem;
+   box-shadow: 0 5px 12px rgba(153, 153, 153, 0.400);
+}
+
+/* hero section */
+.hero {
+   display: flex;
+   gap: 5rem;
+}
+
+
+.hero > div:first-child {
+   width: 40%;
+   margin-top: 10rem;
+   line-height: 1.5;
+}
+
+.hero > div:last-child {
+   width: 60%;
+   margin-bottom: 7rem;
+}
+
+/* hero-info block */
+.hero-info__title {
+   max-width: 20ch;
+   margin-bottom: 5rem;
+   font-size: 3.8rem;
+}
+
+.hero-info__description {
+   width: 50ch;
+   margin-bottom: 4rem;
+}
+
+.hero-info__link {
+   padding: 1.8rem 7rem;
+   font-size: 1.3rem;
+   text-decoration: none;
+   background-color: var(--primary);
+   color: white;
+   border-radius: 3rem;
+}
