@@ -109,13 +109,14 @@ a {
 }
 
 .hero-info__link {
-   padding: 1.8rem 7rem; /*1.8 - 6*/
+   padding: 1.8rem 6rem;
    font-size: 1.3rem;
    text-decoration: none;
    background-color: var(--primary);
    color: white;
    border-radius: 3rem;
 }
+
 
 /* ==================== */
 /* main section */
@@ -126,6 +127,7 @@ a {
 /* cards */
 .main__card {
    display: flex;
+   height: 44rem;
    margin-top: 4rem;
    border-radius: 3rem;
    box-shadow: 0 5px 12px rgba(153, 153, 153, 0.400);
@@ -137,31 +139,61 @@ a {
 
 .main__card > div:last-child {
    width: 40%;
-   padding: 5rem;
 }
 
 .main__info {
-   margin-top: 16rem;
+   margin-top: 15rem;
    padding-left: 12rem;
 }
 
 .main__title {
+   margin-bottom: 1rem;
    color: var(--neutral2);
 }
 
 .main__card p {
    max-width: 49ch;
+   line-height: 1.5;
    color: var(--neutral3);
 }
+
+.main__img-container {
+   padding: 3rem; 
+}
+
 
 
 /* ---------------- */
 /* switched card */
+.main__card--switched {
+   gap: 12rem;
+}
+
 .main__card--switched > div:first-child{
    order: 2;
-   padding-left: 26rem;
 }
 
 .main__card--switched > div:last-child{
    order: 1;
+   margin-left: 11rem;
 }
+
+.main__card--img-switched {
+   padding: 6rem 1rem;
+}
+
+
+
+
+
+
+/* por si acaso xd */
+/* .main__card--switched > div:first-child{
+   width: 40%;
+   padding: 5rem;
+}
+
+.main__card--switched > div:last-child{
+   width: 60%;
+   padding: 0;
+} */
