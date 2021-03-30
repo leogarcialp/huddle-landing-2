@@ -34,8 +34,20 @@ a {
    font-weight: 700;
 }
 
+/* utility */
+.container {
+   width: 130rem;
+   margin: 0 auto;
+}
 
-/* ============= */
+/* @media (max-width: 1440px) {
+   .container {
+      width: 120rem;
+   }   
+} */
+
+
+/* ================ */
 /* Desktop First */
 .header {
    width: 100%;
@@ -44,11 +56,6 @@ a {
    background-position: center;
    background-size: cover;
    background-color: var(--neutral1);
-}
-
-.container {
-   width: 130rem;
-   margin: 0 auto;
 }
 
 .header__nav {
@@ -78,7 +85,6 @@ a {
    gap: 5rem;
 }
 
-
 .hero > div:first-child {
    width: 40%;
    margin-top: 10rem;
@@ -103,10 +109,59 @@ a {
 }
 
 .hero-info__link {
-   padding: 1.8rem 7rem;
+   padding: 1.8rem 7rem; /*1.8 - 6*/
    font-size: 1.3rem;
    text-decoration: none;
    background-color: var(--primary);
    color: white;
    border-radius: 3rem;
+}
+
+/* ==================== */
+/* main section */
+.main {
+   margin-top: 16rem;
+}
+
+/* cards */
+.main__card {
+   display: flex;
+   margin-top: 4rem;
+   border-radius: 3rem;
+   box-shadow: 0 5px 12px rgba(153, 153, 153, 0.400);
+}
+
+.main__card > div:first-child {
+   width: 60%;
+}
+
+.main__card > div:last-child {
+   width: 40%;
+   padding: 5rem;
+}
+
+.main__info {
+   margin-top: 16rem;
+   padding-left: 12rem;
+}
+
+.main__title {
+   color: var(--neutral2);
+}
+
+.main__card p {
+   max-width: 49ch;
+   color: var(--neutral3);
+}
+
+
+/* ---------------- */
+/* switched card */
+.main__card--switched > div:first-child{
+   order: 2;
+   padding-left: 26rem;
+}
+
+.main__card--switched > div:last-child{
+   order: 1;
 }
