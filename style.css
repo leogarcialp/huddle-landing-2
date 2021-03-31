@@ -41,22 +41,17 @@ a {
 }
 
 /* container media querie */
+@media (max-width: 1440px) {
+   .container {
+      width: 90%;
+   } 
+}  
+
 @media (max-width: 500px) {
    .container {
       width: 35rem;
-   }   
-}
-@media (max-width: 768px) {
-   .container {
-      width: 50rem;
-   }   
-}
-@media (max-width: 1024px) {
-   .container {
-      width: 70rem;
-   }   
-}
-
+   } 
+}  
 /* ================ */
 /* Desktop First */
 .header {
